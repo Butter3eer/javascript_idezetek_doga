@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main class="container">
+
+      <div class="row">
+
+        <div>
+          <button class="btn btn-warning" id="osszesIdezet">Összes idézet</button>
+          <ul id="osszesIdezetUL"></ul>
+        </div>
+
+        <div>
+          <button class="btn btn-warning" id="the">The</button>
+          <ol id="theOL"></ol>
+        </div>
+
+        <div>
+          <button class="btn btn-warning" id="hossz">Hossz</button>
+          <p id="hosszBekezdes"></p>
+        </div>
+
+        <div>
+          <label class="form-label">
+            Szerző:
+            <input class="form-control" id="szerzoInput" type="text">
+          </label><br>
+          <input class="form-control" id="darabSzamInput" type="number" readonly>
+          <button class="btn btn-warning" id="darabSzam">Darabszám</button>
+        </div>
+
+        <div>
+          <label class="form-label">
+            Szerző:
+            <input class="form-control" id="szerzoSzorgalmi" type="text">
+          </label>
+          <input class="form-control" id="darabSzamSzorgalmi" type="number" readonly>
+        </div>
+
+        <div>
+          <label class="form-label">
+            Szerző:
+            <input class="form-control" id="szerzoSzorgalmi2" type="text">
+          </label><br>
+          <input class="form-control" id="darabSzamInput2" type="number" readonly>
+          <button class="btn btn-warning" id="darabSzamSzorgalmi2">Darabszám</button>
+          <label class="form-label" for="egyezesCheckbox">Pontos egyezés</label>
+          <input id="egyezesCheckbox" type="checkbox" value="pontos">
+        </div>
+
+      </div>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
